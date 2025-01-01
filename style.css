@@ -3,8 +3,8 @@ body {
     font-family: 'Times New Roman';
     background: lightskyblue;
     color: darkblue;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 img {
     height: 500px;
@@ -21,3 +21,14 @@ h2, h3, h5, h6 {
 h4, p {
     line-height: 2;
 }
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 0px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
